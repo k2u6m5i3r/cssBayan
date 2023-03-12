@@ -1,12 +1,6 @@
-/* 
-*{
-  border: 1px solid green;
-} 
-*/
 .wrapper{
   
 }
-
 [class*="__container"] {
   max-width: 80%;
   margin: 0 auto;
@@ -16,7 +10,6 @@ body{
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
 }
-
 .wrapper {
 }
 .mems__container {
@@ -25,15 +18,12 @@ body{
 }
 .mems__items {
 }
-
 .mems__items:hover .mem__discription{
   color: #000000;
 }
 .mems__items:hover .mem__discription:after {
-  /* показать стрелку открыто-закрыто только когда в аккордеоне */
   content: "";
   display: block;
-  /* стрелка вниз */
   border-style: solid;
   border-width: 20px 15px 0 15px;
   border-color: #000000 transparent transparent transparent;
@@ -47,7 +37,6 @@ body{
   margin: 5px 0px;
   border-top: 2px solid #000000;
 }
-
 .mems__item:active {
   opacity: 0.5;
 }
@@ -67,7 +56,6 @@ body{
   
 }
 .mems__content img{
-  /* убрать картинки мемов */
   display: none;
   max-width: 100%;
   margin: 0 auto;
@@ -78,9 +66,7 @@ body{
   position: relative;
   margin: 20px 0px;
 }
-
 input:checked ~ .mems__content .mem__discription:after{
-  /* стрелка вверх */
   border-style: solid;
   border-width: 0 15px 20px 15px; 
   border-color: transparent transparent #000000 transparent;
