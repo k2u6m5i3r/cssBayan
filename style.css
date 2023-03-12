@@ -1,0 +1,36 @@
+* {
+  border: 1px solid green;
+}
+.wrapper{
+  
+}
+
+[class*="__container"] {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+
+.wrapper {
+}
+.mems__container {
+}
+.mems__titel {
+}
+.mems__items {
+}
+.mems__item {
+}
+.mems__content {
+}
+.mems__content img{
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.mem__discription {
+}
+/* input{
+  display: none;
+} */
