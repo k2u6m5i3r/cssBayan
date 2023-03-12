@@ -92,3 +92,9 @@ input:checked ~ .mems__content .mem__discription{
 input{
   display: none;
 }
+
+@media (max-width: 819px) {
+  .mem__discription {
+  font-size: 1.5em;
+  }
+}
