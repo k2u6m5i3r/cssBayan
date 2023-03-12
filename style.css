@@ -1,6 +1,8 @@
-* {
+/* 
+*{
   border: 1px solid green;
-}
+} 
+*/
 .wrapper{
   
 }
@@ -40,7 +42,9 @@ body{
   transform: translateY(-50%);
 }
 .mems__item {
-  
+  display: block;
+  margin: 5px 0px;
+  border-top: 2px solid #000000;
 }
 
 .mems__item:active {
@@ -70,6 +74,7 @@ body{
   font-size: 2em;
   color: #0000ff;
   position: relative;
+  margin: 20px 0px;
 }
 
 input:checked ~ .mems__content .mem__discription:after{
