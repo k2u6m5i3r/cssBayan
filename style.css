@@ -25,6 +25,7 @@ body{
 }
 .mems__items {
 }
+
 .mems__items:hover .mem__discription{
   color: #000000;
 }
@@ -60,6 +61,7 @@ body{
 }
 .mems__item:hover .mems__content img{
   display: block;
+  animation: animation 1s;
 }
 .mems__content {
   
@@ -96,5 +98,16 @@ input{
 @media (max-width: 819px) {
   .mem__discription {
   font-size: 1.5em;
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
   }
 }
