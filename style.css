@@ -59,7 +59,7 @@ body{
   border-width: 0 15px 20px 15px;
   border-color: transparent transparent #000000 transparent;
 }
-.mems__item:hover .mems__content img{
+.mems__item:hover input:not(:checked) ~ .mems__content img{
   display: block;
   animation: animation 1s;
 }
