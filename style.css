@@ -6,7 +6,7 @@
 }
 
 [class*="__container"] {
-  max-width: 1920px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0px 15px;
 }
@@ -20,17 +20,67 @@
 }
 .mems__items {
 }
+.mems__items:hover .mem__discription{
+  color: #000000;
+}
+.mems__items:hover .mem__discription:after {
+  /* показать стрелку открыто-закрыто только когда в аккордеоне */
+  content: "";
+  display: block;
+  /* стрелка вниз */
+  border-style: solid;
+  border-width: 20px 15px 0 15px;
+  border-color: #000000 transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+}
 .mems__item {
+  
+}
+
+.mems__item:active {
+  opacity: 0.5;
+}
+.mems__item:hover {
+  cursor: pointer;
+}
+.mems__item:hover .mems__content .mem__discription:after{
+  border-style: solid;
+  border-width: 0 15px 20px 15px;
+  border-color: transparent transparent #000000 transparent;
+}
+.mems__item:hover .mems__content img{
+  display: block;
 }
 .mems__content {
+  
 }
 .mems__content img{
-  display: block;
+  /* убрать картинки мемов */
+  display: none;
   max-width: 100%;
   margin: 0 auto;
 }
 .mem__discription {
+  font-size: 2em;
+  color: #0000ff;
+  position: relative;
 }
-/* input{
+
+input:checked ~ .mems__content .mem__discription:after{
+  /* стрелка вверх */
+  border-style: solid;
+  border-width: 0 15px 20px 15px; 
+  border-color: transparent transparent #000000 transparent;
+}
+input:checked ~ .mems__content img{
+  display: block;
+}
+input:checked ~ .mems__content .mem__discription{
+  color: #000000;
+}
+input{
   display: none;
-} */
+}
